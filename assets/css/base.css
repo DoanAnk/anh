@@ -1,0 +1,122 @@
+:root {
+    --white-color: #fff;
+    --main-color:rgb(255, 61, 61);
+    --black-color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #ccc;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+
+}
+ul {
+    list-style-type: none;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+    transition: all .25s ease;
+}
+/* Reponsive */
+.gird {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.gird_full-width {
+    width: 100%;
+}
+.gird_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* test */
+.gird_column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.66667%;
+}
+.gird_column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.33333%;
+}
+.gird_column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item {
+    margin: 0 12px;
+}
+.pagination-item_link.pagination-item_link_active {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+.pagination-item_link {
+    --height: 30px;
+    display: block;
+    font-size: 1.6rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+}
+.pagination-item_icon {
+    color: #000;
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .gird_column-2-4 {
+        width: 25%;
+    }
+}
+@media screen and (min-width:414px) and (max-width:767px) {
+    .gird_column-2-4 {
+        width: 33.33334%;
+    }
+}
+@media screen and (min-width:414px) and (max-width:767px) {
+    .c-12 {
+        width: 100%;
+    }
+    .l-0 {
+        display: none;
+    }
+    .gird_column-2-4 {
+        width: 50%;
+    }
+}
+@media screen  and (max-width:413px) {
+    .c-12 {
+        width: 100%;
+    }
+    .l-0 {
+        display: none;
+    }
+    .gird_column-2-4 {
+        width: 100%;
+    }
+}
